@@ -101,7 +101,7 @@ npm run seed
 
 Example Admin Credentials:
 
-**Email:** [admin@shoppycart.com](mailto:admin@shoppycart.com)
+**Email:** [admin@shoppy.com](mailto:admin@shoppy.com)
 
 **Password:** password123
 
