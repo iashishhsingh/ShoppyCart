@@ -4,6 +4,12 @@ A professionally engineered full-stack MERN E-Commerce platform built using mode
 
 ---
 
+## 🌐 Live Demo
+
+**Live Website:** https://shoppycart-frontend.onrender.com
+
+---
+
 ## 🛠 Tech Stack
 
 **Frontend**
@@ -51,6 +57,21 @@ A professionally engineered full-stack MERN E-Commerce platform built using mode
 * Product Management (Add, Update, Delete)
 * Cloudinary Image Upload
 * Responsive User Interface
+
+---
+
+## 💳 Razorpay Test Payment
+
+The live deployment uses Razorpay in **Test Mode** for payment testing.
+
+Use these test payment details when testing the checkout flow:
+
+* **Card Number:** 4111 1111 1111 1111
+* **Expiry:** Any future date
+* **CVV:** Any 3 digits
+* **Cardholder Name:** Any name
+
+> ⚠️ This is a Razorpay test card. No real money will be charged.
 
 ---
 
@@ -117,14 +138,14 @@ npm run dev
 
 Or start them individually:
 
-Backend
+### Backend
 
 ```bash
 cd backend
 npm start
 ```
 
-Frontend
+### Frontend
 
 ```bash
 cd frontend
