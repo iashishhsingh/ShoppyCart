@@ -1,0 +1,172 @@
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 55px;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--oasis-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 30px var(--oasis-shadow);
+}
+
+/* ========================= */
+/* BRAND */
+/* ========================= */
+
+/* ========================= */
+/* BRAND */
+/* ========================= */
+
+.navbar-brand a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+
+  filter: drop-shadow(0 5px 16px rgba(0, 121, 107, 0.22));
+
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.brand-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-main,
+.brand-accent {
+  font-size: 2.15rem;
+  font-weight: 700;
+  letter-spacing: -1.4px;
+  line-height: 1;
+}
+
+.brand-main {
+  color: var(--oasis-teal);
+}
+
+.brand-accent {
+  color: var(--oasis-green);
+}
+
+/* ========================= */
+/* NAV LINKS */
+/* ========================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--oasis-teal);
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--oasis-green);
+}
+
+/* Underline Animation */
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--oasis-green);
+
+  transition: width 0.3s ease;
+  border-radius: 50px;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* ========================= */
+/* LOGOUT BUTTON */
+/* ========================= */
+
+.btn-logout {
+  background: transparent;
+  border: 1px solid rgba(0, 121, 107, 0.24);
+  color: var(--oasis-teal);
+  padding: 9px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+
+  transition: 0.3s ease;
+}
+
+.btn-logout:hover {
+  background: var(--oasis-mist);
+  border-color: var(--oasis-teal);
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 22px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navbar-links {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-main,
+  .brand-accent {
+    font-size: 1.8rem;
+  }
+
+  .brand-dot {
+    font-size: 2.2rem;
+  }
+}
